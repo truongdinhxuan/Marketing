@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 /* body {background-color: #df7272;} */
 .wrapper {
     min-height: 100vh;
@@ -17,7 +18,7 @@ header {
     background: white;
     box-shadow: 0 2px 8px #0000001a;
     border-radius: 20px;
-    margin: 10px 30px 20px;
+    margin: 20px 50px;
     /* padding: 10px 20px; */
 }
 
@@ -45,6 +46,7 @@ header {
     width: auto;
     transition: box-shadow 0.25s;
 }
+
 .mobile-search {
     --padding: 14px;
     width: max-content;
@@ -62,6 +64,7 @@ header {
 .desktop-search:focus-within {
     box-shadow: 0 0 5px #c56d6d;
 }
+
 .mobile-search:focus-within {
     box-shadow: 0 0 5px #c56d6d;
 }
@@ -77,6 +80,7 @@ header {
     background: transparent;
     flex: 1;
 }
+
 .mobile-search-input {
     font-size: 20px;
     font-family: 'lexend', sans-serif;
@@ -92,6 +96,7 @@ header {
 .desktop-search:focus-within {
     box-shadow: 0 0 5px #c56d6d;
 }
+
 .mobile-search:focus-within {
     box-shadow: 0 0 5px #c56d6d;
 }
@@ -129,6 +134,7 @@ nav ul li {
     padding: 32px 0;
     margin-right: 10px;
 }
+
 /* Hover chỉ áp dụng cho li không phải phần tử đầu tiên */
 nav ul li:not(:first-child):hover {
     background-color: #1f4054;
@@ -151,14 +157,16 @@ nav ul li:not(:first-child):hover a {
 .mobile-search {
     display: none;
 }
+
 @media (max-width: 992px) {
     .desktop-search {
         display: none;
     }
+
     .mobile-search {
         display: block;
     }
-    
+
     .hamburger {
         display: block;
     }
@@ -321,25 +329,69 @@ main {
 }
 
 /* Image Slide */
+.image-slide {
+    text-align: center;
+}
+
 .image-wrapper {
     position: relative;
+    max-width: 90%;
+    height: 600px;
     width: 100%;
+    margin: 0 auto;
+    /* 👈 căn giữa */
     overflow: hidden;
+    /* margin-bottom: 20px; */
+}
+
+.mySlides {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
 }
 
 .image-wrapper img {
     width: 100%;
-    display: none;
+    border-radius: 30px;
+    border: 30px;
+    display: block;
 }
 
 .image-wrapper .overlay {
     position: absolute;
     top: 0;
+    border-radius: 30px;
     left: 0;
     width: 100%;
     height: 100%;
     background-color: #000000b7;
     pointer-events: none;
+}
+
+.btn-display-left,
+.btn-display-right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 24px;
+    padding: 12px;
+    cursor: pointer;
+    z-index: 10;
+}
+.btn-display-left:hover,
+.btn-display-right:hover {
+    color: green;
+}
+.btn-display-left {
+    left: 10px;
+}
+
+.btn-display-right {
+    right: 10px;
 }
 
 /* End of image slide */
