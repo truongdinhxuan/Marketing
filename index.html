@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nexus</title>
-  <!-- <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet"> -->
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -14,7 +14,7 @@
     <header>
       <div class="nav-container">
         <a href="#" class="href-logo">
-          <img src="/Marketing/images/logo.png" alt="logo" class="logo" />
+          <img src="images/logo.png" alt="logo" class="logo" />
         </a>
         <nav>
           <div class="hamburger" onclick="toggleMenu()">☰</div>
@@ -31,20 +31,33 @@
       </div>
     </header>
     <main>
-      <div class="image-slide">
+      <section class="image-slide">
+        <div class="image-wrapper">
+          <img class="mySlides" src="/images/nap-ho-ga-image (2).jpg" alt="nap-ho-ga-image">
+          <img class="mySlides" src="/images/nap-ho-ga-image (3).jpg" alt="nap-ho-ga-image">
+          <img class="mySlides" src="/images/nap-ho-ga-image (4).jpg" alt="nap-ho-ga-image">
+          <div class="mySlides" class="overlay"></div>
+          <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+          <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+        </div>
+      </section>
+      <section class="first-intro">
+
+      </section>
+      <section class="second-intro">
         
-      </div>
-      <div class="first-intro"></div>
-      <div class="second-intro"></div>
-      <div class="third-intro"></div>
-      <div class="fourth-intro"></div>
+      </section>
+      <section class="third-intro"></section>
+      <section class="fourth-intro"></section>
     </main>
     <footer class="footer">
       <div class="footer-content">
         <!-- Main Footer Content -->
         <div class="footer-section">
           <h3>Về chúng tôi</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo magni vero laborum suscipit! Ipsum aliquid tempore fugit, porro similique doloribus! Facilis unde, rerum consectetur atque ea vel provident beatae cupiditate!. </p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo magni vero laborum suscipit! Ipsum aliquid
+            tempore fugit, porro similique doloribus! Facilis unde, rerum consectetur atque ea vel provident beatae
+            cupiditate!. </p>
         </div>
 
         <div class="footer-section">
