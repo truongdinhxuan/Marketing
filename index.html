@@ -16,116 +16,117 @@
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
 </head>
+<!-- animation background -->
 
 <body class="bg-red-900">
+  <div class="header finisher-header" style="width: auto; height: auto;">
 
-  <div class="wrapper">
-    <header>
-      <div class="nav-container">
-        <a href="#" class="href-logo">
-          <img src="images/logo.png" alt="logo" class="logo" />
-        </a>
-        <form>
-          <div class="desktop-search">
-            <span class="search-icon material-symbols-outlined">search</span>
-            <input class="desktop-search-input" type="search" placeholder="Tìm kiếm..." aria-label="Search" />
+    <div class="wrapper">
+      <header>
+        <div class="nav-container">
+          <a href="#" class="href-logo">
+            <img src="images/logo.png" alt="logo" class="logo" />
+          </a>
+          <form>
+            <div class="desktop-search">
+              <span class="search-icon material-symbols-outlined">search</span>
+              <input class="desktop-search-input" type="search" placeholder="Tìm kiếm..." aria-label="Search" />
+            </div>
+          </form>
+
+          <!-- hamburger menu -->
+          <nav>
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
+            <ul class="nav-links" id="navLinks">
+              <!-- Search bar inside hamburger menu -->
+              <!-- Search bar hiển thị ở mobile -->
+              <li>
+                <form>
+                  <div class="mobile-search">
+                    <span class="search-icon material-symbols-outlined">search</span>
+                    <input class="mobile-search-input" type="search" placeholder="Tìm kiếm..." aria-label="Search" />
+                  </div>
+                </form>
+              </li>
+              <!-- Menu items -->
+              <li><a href="#" id="nav-item">Trang chủ</a></li>
+              <li><a href="#" id="nav-item">Về chúng tôi</a></li>
+              <li><a href="#" id="nav-item">Sản phẩm</a></li>
+              <!-- <li><a href="#" id="nav-item">Infrastructure</a></li> -->
+              <!-- <li><a href="#" id="nav-item">Sustainability</a></li> -->
+              <li><a href="#" id="nav-item">Blog</a></li>
+              <li><a href="#" id="nav-item">Liên hệ</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main>
+
+        <section class="image-slide">
+          <div class="image-wrapper">
+            <img class="mySlides" src="/images/nap-ho-ga-image (2).jpg" alt="nap-ho-ga-image">
+            <img class="mySlides" src="/images/nap-ho-ga-image (3).jpg" alt="nap-ho-ga-image">
+            <img class="mySlides" src="/images/nap-ho-ga-image (4).jpg" alt="nap-ho-ga-image">
+            <div class="mySlides" class="overlay"></div>
+            <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
           </div>
-        </form>
+        </section>
+        <section class="first-intro">
 
-        <!-- hamburger menu -->
-        <nav>
-          <div class="hamburger" onclick="toggleMenu()">☰</div>
-          <ul class="nav-links" id="navLinks">
-            <!-- Search bar inside hamburger menu -->
-            <!-- Search bar hiển thị ở mobile -->
-            <li >
-              <form>
-                <div class="mobile-search">
-                  <span class="search-icon material-symbols-outlined">search</span>
-                  <input class="mobile-search-input" type="search" placeholder="Tìm kiếm..." aria-label="Search" />
-                </div>
-              </form>
-            </li>
-            <!-- Menu items -->
-            <li><a href="#" id="nav-item">Trang chủ</a></li>
-            <li><a href="#" id="nav-item">Về chúng tôi</a></li>
-            <li><a href="#" id="nav-item">Sản phẩm</a></li>
-            <!-- <li><a href="#" id="nav-item">Infrastructure</a></li> -->
-            <!-- <li><a href="#" id="nav-item">Sustainability</a></li> -->
-            <li><a href="#" id="nav-item">Blog</a></li>
-            <li><a href="#" id="nav-item">Liên hệ</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <main>
-      <!-- animation background -->
-      <div class="header finisher-header" style="width: auto; height: 999px;">
-      </div>
-      <section class="image-slide">
-        <div class="image-wrapper">
-          <img class="mySlides" src="/images/nap-ho-ga-image (2).jpg" alt="nap-ho-ga-image">
-          <img class="mySlides" src="/images/nap-ho-ga-image (3).jpg" alt="nap-ho-ga-image">
-          <img class="mySlides" src="/images/nap-ho-ga-image (4).jpg" alt="nap-ho-ga-image">
-          <div class="mySlides" class="overlay"></div>
-          <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-          <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
-        </div>
-      </section>
-      <section class="first-intro">
+        </section>
+        <section class="second-intro">
 
-      </section>
-      <section class="second-intro">
-        
-      </section>
-      <section class="third-intro"></section>
-      <section class="fourth-intro"></section>
-    </main>
-    <footer class="footer">
-      <div class="footer-content">
-        <!-- Main Footer Content -->
-        <div class="footer-section">
-          <h3>Về chúng tôi</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo magni vero laborum suscipit! Ipsum aliquid
-            tempore fugit, porro similique doloribus! Facilis unde, rerum consectetur atque ea vel provident beatae
-            cupiditate!. </p>
-        </div>
+        </section>
+        <section class="third-intro"></section>
+        <section class="fourth-intro"></section>
+      </main>
+      <footer class="footer">
+        <div class="footer-content">
+          <!-- Main Footer Content -->
+          <div class="footer-section">
+            <h3>Về chúng tôi</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo magni vero laborum suscipit! Ipsum aliquid
+              tempore fugit, porro similique doloribus! Facilis unde, rerum consectetur atque ea vel provident beatae
+              cupiditate!. </p>
+          </div>
 
-        <div class="footer-section">
-          <h3>Truy cập nhanh</h3>
-          <ul>
-            <li><a href="#">Trang chủ</a></li>
-            <li><a href="#">Dịch vụ/Sản phẩm</a></li>
-            <!-- <li><a href="#">Portfolio</a></li> -->
-            <li><a href="#">Liên hệ</a></li>
-          </ul>
-        </div>
+          <div class="footer-section">
+            <h3>Truy cập nhanh</h3>
+            <ul>
+              <li><a href="#">Trang chủ</a></li>
+              <li><a href="#">Dịch vụ/Sản phẩm</a></li>
+              <!-- <li><a href="#">Portfolio</a></li> -->
+              <li><a href="#">Liên hệ</a></li>
+            </ul>
+          </div>
 
-        <div class="footer-section">
-          <h3>Thông tin liên lạc</h3>
-          <ul>
-            <li>Email: info@example.com</li>
-            <li>Số điện thoại: +84 123456789</li>
-            <li>Địa chỉ: Cầu Giấy, Hà Nội</li>
-          </ul>
-        </div>
+          <div class="footer-section">
+            <h3>Thông tin liên lạc</h3>
+            <ul>
+              <li>Email: info@example.com</li>
+              <li>Số điện thoại: +84 123456789</li>
+              <li>Địa chỉ: Cầu Giấy, Hà Nội</li>
+            </ul>
+          </div>
 
-        <div class="footer-section">
-          <h3>Mạng xã hội</h3>
-          <div class="social-links">
-            <a href="#" class="social-link">Zalo</a>
-            <a href="#" class="social-link">Facebook</a>
-            <a href="#" class="social-link">Instagram</a>
-            <!-- <a href="#" class="social-link">LinkedIn</a> -->
+          <div class="footer-section">
+            <h3>Mạng xã hội</h3>
+            <div class="social-links">
+              <a href="#" class="social-link">Zalo</a>
+              <a href="#" class="social-link">Facebook</a>
+              <a href="#" class="social-link">Instagram</a>
+              <!-- <a href="#" class="social-link">LinkedIn</a> -->
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- Copyright Section -->
-      <div class="footer-bottom">
-        <p>&copy; 2025 Bê tông cốt thép. All rights reserved.</p>
-      </div>
-    </footer>
+        <!-- Copyright Section -->
+        <div class="footer-bottom">
+          <p>&copy; 2025 Bê tông cốt thép. All rights reserved.</p>
+        </div>
+      </footer>
+    </div>
   </div>
 </body>
 
@@ -170,4 +171,4 @@
       "c"
     ]
   });
-  </script>
+</script>
