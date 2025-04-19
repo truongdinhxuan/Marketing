@@ -29,6 +29,74 @@ header {
     margin: 0 auto;
 }
 
+
+
+/* search bar  */
+
+.desktop-search {
+    --padding: 14px;
+    width: max-content;
+    display: flex;
+    align-items: center;
+    padding: var(--padding);
+    padding: 14px;
+    border-radius: 100px;
+    background: #ffffff;
+    width: auto;
+    transition: box-shadow 0.25s;
+}
+.mobile-search {
+    --padding: 14px;
+    width: max-content;
+    display: flex;
+    align-items: center;
+    padding: var(--padding);
+    padding: 14px;
+    border-radius: 28px;
+    background: #ffffff;
+    width: auto;
+    transition: box-shadow 0.25s;
+
+}
+
+.desktop-search:focus-within {
+    box-shadow: 0 0 5px #c56d6d;
+}
+.mobile-search:focus-within {
+    box-shadow: 0 0 5px #c56d6d;
+}
+
+
+.desktop-search-input {
+    font-size: 20px;
+    font-family: 'lexend', sans-serif;
+    color: #b849c2;
+    margin-left: var(--padding);
+    outline: none;
+    border: none;
+    background: transparent;
+    flex: 1;
+}
+.mobile-search-input {
+    font-size: 20px;
+    font-family: 'lexend', sans-serif;
+    color: #e129f1;
+    margin-left: var(--padding);
+    margin-top: ;
+    outline: none;
+    border: none;
+    background: transparent;
+    flex: 1;
+}
+
+.desktop-search:focus-within {
+    box-shadow: 0 0 5px #c56d6d;
+}
+.mobile-search:focus-within {
+    box-shadow: 0 0 5px #c56d6d;
+}
+
+
 .nav-container #nav-item {
     padding: 1rem;
 }
@@ -38,6 +106,7 @@ header {
     margin-left: 10px;
     margin-bottom: 10px;
 }
+
 
 nav ul {
     list-style: none;
@@ -58,12 +127,14 @@ nav ul li {
     padding: 32px 0;
     margin-right: 10px;
 }
-nav ul li:hover {
+/* Hover chỉ áp dụng cho li không phải phần tử đầu tiên */
+nav ul li:not(:first-child):hover {
     background-color: #1f4054;
     border-radius: 10px;
     transform: scale(1.2);
 }
-nav ul li:hover a {
+
+nav ul li:not(:first-child):hover a {
     color: white;
 }
 .hamburger {
@@ -74,7 +145,17 @@ nav ul li:hover a {
 }
 
 /* Responsive */
+.mobile-search {
+    display: none;
+}
 @media (max-width: 992px) {
+    .desktop-search {
+        display: none;
+    }
+    .mobile-search {
+        display: block;
+    }
+    
     .hamburger {
         display: block;
     }

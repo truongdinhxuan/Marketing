@@ -2,29 +2,51 @@
 <html lang="en">
 
 <head>
+
+
+
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AN NHIEN</title>
+  <title>search bar</search>
+  </title>
   <!-- <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet"> -->
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
 </head>
 
 <body class="bg-red-900">
+
   <div class="wrapper">
     <header>
       <div class="nav-container">
         <a href="#" class="href-logo">
           <img src="/Marketing/images/logo.png" alt="logo" class="logo" />
         </a>
-        <!-- seach box -->
-        <input type="search" class="search-bar" placeholder="Tìm kiếm...">
-        <div class="search-icon">
-          <img src="/Marketing/images/search.png" alt="search icon" class="search-icon-img" />
-        </div>
+        <form>
+          <div class="desktop-search">
+            <span class="search-icon material-symbols-outlined">search</span>
+            <input class="desktop-search-input" type="search" placeholder="Tìm kiếm..." aria-label="Search" />
+          </div>
+        </form>
+
         <!-- hamburger menu -->
         <nav>
           <div class="hamburger" onclick="toggleMenu()">☰</div>
           <ul class="nav-links" id="navLinks">
+            <!-- Search bar inside hamburger menu -->
+            <!-- Search bar hiển thị ở mobile -->
+            <li >
+              <form>
+                <div class="mobile-search">
+                  <span class="search-icon material-symbols-outlined">search</span>
+                  <input class="mobile-search-input" type="search" placeholder="Tìm kiếm..." aria-label="Search" />
+                </div>
+              </form>
+            </li>
+            <!-- Menu items -->
             <li><a href="#" id="nav-item">Trang chủ</a></li>
             <li><a href="#" id="nav-item">Về chúng tôi</a></li>
             <li><a href="#" id="nav-item">Sản phẩm</a></li>
@@ -34,18 +56,19 @@
             <li><a href="#" id="nav-item">Liên hệ</a></li>
           </ul>
         </nav>
-
-
-
-
       </div>
     </header>
     <main>
+      <!-- animation background -->
+      <div class="header finisher-header" style="width: auto; height: 999px;">
+      </div>
       <div class="image-slide">
-        
+
       </div>
       <div class="first-intro"></div>
-      <div class="second-intro"></div>
+      <div class="second-intro">
+        
+      </div>
       <div class="third-intro"></div>
       <div class="fourth-intro"></div>
     </main>
@@ -54,7 +77,9 @@
         <!-- Main Footer Content -->
         <div class="footer-section">
           <h3>Về chúng tôi</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo magni vero laborum suscipit! Ipsum aliquid tempore fugit, porro similique doloribus! Facilis unde, rerum consectetur atque ea vel provident beatae cupiditate!. </p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo magni vero laborum suscipit! Ipsum aliquid
+            tempore fugit, porro similique doloribus! Facilis unde, rerum consectetur atque ea vel provident beatae
+            cupiditate!. </p>
         </div>
 
         <div class="footer-section">
@@ -97,3 +122,43 @@
 
 </html>
 <script src="script.js"></script>
+<script src="finisher-header.es5.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+  new FinisherHeader({
+    "count": 10,
+    "size": {
+      "min": 496,
+      "max": 1297,
+      "pulse": 0.5
+    },
+    "speed": {
+      "x": {
+        "min": 0.1,
+        "max": 0.6
+      },
+      "y": {
+        "min": 0.1,
+        "max": 0.6
+      }
+    },
+    "colors": {
+      "background": "#000000",
+      "particles": [
+        "#415ca6",
+        "#000000",
+        "#0019ff",
+        "#000000",
+        "#940000"
+      ]
+    },
+    "blending": "overlay",
+    "opacity": {
+      "center": 0.5,
+      "edge": 0.05
+    },
+    "skew": 0,
+    "shapes": [
+      "c"
+    ]
+  });
+  </script>
